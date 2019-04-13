@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#6A5ACD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="yandex-verification" content="76ccf37986fc5237" />
+    <title>Ивановский</title>
+    <link rel="SHORTCUT ICON" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body style=" background-size: 150% 600% !important;">
+    <!--
+  ____           _   _     _             
+ |  _ \ ___  ___| |_(_)___| | __ ___   __
+ | |_) / _ \/ __| __| / __| |/ _` \ \ / /
+ |  _ < (_) \__ \ |_| \__ \ | (_| |\ V / 
+ |_| \_\___/|___/\__|_|___/_|\__,_| \_/  
+                                         
+-->
+    <!--Прелоадер-->
+    <style type="text/css">
+    #hellopreloader>p {
+        display: none;
+    }
+
+    #hellopreloader_preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #663399 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
+        background-size: 41px;
+    }
+    </style>
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function() {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none";
+            }
+        }, 16);
+    }
+    window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 50); };
+    </script>
+    <!--Прелоадер-->
+    <!--Навбар-->
+    <nav class="nav-extended nav-fixed">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Ивановский</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="podviggen.html">Подвиг Генерала</a></li>
+                <li><a href="lifegen.html">Жизнь Генерала</a></li>
+                <li><a href="medalsgen.html">Награды Генерала</a></li>
+                <li><a href="memorygen.html">Память о Генерале</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#test1">Его именем названы...</a></li>
+                <li class="tab"><a href="#test4">Витебск, улица в Билево</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Главная</a></li>
+        <li><a href="badges.html">Подвиг Генерала</a></li>
+        <li><a href="collapsible.html">Жизнь Генерала</a></li>
+    </ul>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="download.html">Скачать</a></li>
+    </ul>
+    <!--Навбар-->
+    <!--Контент-->
+    <div class="wrapper">
+        <div class="content">
+            <!--<div class="bluredforest">
+                <div class="indexmaincontent center-align">
+                    <h5 class="container center-align scale-animation" style="margin-top:70px;">От подвига до награды</h5>
+                    <h4 class="center-align" style="margin-bottom:30px;">Генерал Ивановский</h4>
+                </div>
+            </div>-->
+            <div class="container">
+                <div class="card-panel white">
+                    <span class="-text">
+                    </span>
+                </div>
+                <div class="card-panel white">
+                    <span class="-text">
+                    </span>
+                </div>
+                <div class="card-panel white">
+                    <span class="-text">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--Контент-->
+        <!--Футер-->
+        <footer>
+            <div class="footer-copyright">
+                <div class="container">
+                    <span class="brown-text lighten-4">
+                        <script>
+                        new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());
+                        </script>
+                    </span><a href="index.html"> &nbsp;<span class="brown-text lighten-4">Danchenko</span></a>
+                </div>
+            </div>
+        </footer>
+        <!--Футер-->
+    </div>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <!--Иконки-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Фреймворк-->
+    <script>
+    //Подключение бокового меню
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+    });
+    //
+
+    //Подключение подсказок
+    $(document).ready(function() {
+        $('.tooltipped').tooltip();
+    });
+    //
+
+    //Подключение меню проектов
+    $(document).ready(function() {
+        $('.collapsible').collapsible();
+    });
+    //
+
+    //Подключение параллакса
+    $(document).ready(function() {
+        $('.parallax').parallax();
+    });
+    //
+
+    //Кнопка Вверх
+    $(document).ready(function() {
+        $('body').append('<i class="material-icons" id="go-top"><span id="go-top-icon">keyboard_arrow_up</span></i>');
+    });
+    $(function() {
+        $.fn.scrollToTop = function() {
+            $(this).hide().removeAttr("href");
+            if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+            var scrollDiv = $(this);
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+                else $(scrollDiv).fadeIn("slow")
+            });
+            $(this).click(function() {
+                $("html, body").animate({ scrollTop: 0 }, "slow")
+            })
+        }
+    });
+    $(function() {
+        $("#go-top").scrollToTop();
+    });
+    //
+
+    //Анимация навбара
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            $('nav').addClass("sticky");
+            $('tabs').addClass("hide");
+        } else {
+            $('nav').removeClass("sticky");
+            $('tabs').removeClass("hide");
+        }
+    });
+    //
+    $('.dropdown-trigger').dropdown();
+    </script>
+</body>
+
+</html>
