@@ -7,18 +7,16 @@
                                          
 */
 body {
-  /*background-image: linear-gradient(to bottom, #f9eebb, #cec186);*/
-  background-repeat: ;
-   background-color: #f9eebb;
+    background:url(img/bg.jpg);
+    background-repeat: repeat;
+    background-size: 150px 150px;
     color: #FFFFFF;
     font-size: 20px;
     padding-top: 100px;
-    background-size: 5000% 5000%;
     font-family: "Century Gothic", Arial, sans-serif;
     position: relative;
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 2s;
-    
     animation-duration: 2s;
     overflow-x: hidden;
     font-family: "Century Gothic";
@@ -48,45 +46,9 @@ body {
 
 
 }
-.invisible {
-    visibility: hidden;
-    opacity: 0;
-}
-
-#city {
-    background-image: url(img/city.jpg);
-    repeat-x;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-
-a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-
-.hover:hover {
-    opacity: 0.7;
-}
 
 .pointer {
     cursor: pointer;
-}
-
-#laptop {
-    background-image: url(img/laptop.jpg);
-    repeat-x;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-#laptops {
-    background-image: url(img/laptops.jpg);
-    background-repeat: repeat-x;
-    margin-right: -10px;
-    margin-left: -10px;
 }
 
 .nav-fixed {
@@ -110,59 +72,42 @@ a {
     margin-top: 50px;
 }
 
-#minsk2 {
-    background-image: url(img/minsk2.jpg);
-    repeat-x;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-#minsk3 {
-    background-image: url(img/minsk3.jpg);
-    repeat-x;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.collection {
-    color: dimgray;
-    font-size: 25px;
-}
-
-.parallax-container {
-    height: 300px;
-}
-
-#marko {
-    background-image: url(img/marko.jpg);
-    background-repeat: repeat-x;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-#minsk {
-    background-image: url(img/minsk.jpg);
-    repeat-x;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.btn-large {
-    color: dimgray;
-}
-
-.btndownload {
-    position: absolute;
-    right: 10px;
-    top: 25px;
-    float: left;
-}
-
 .te {
     word-wrap: break-word;
 }
 
-::-webkit-scrollbar-button {
+
+
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 23px;
+    cursor: pointer;
+    display: none;
+    width: 45px;
+    height: 45px;
+    background: rgb(238, 238, 238);
+    font-size: 25px;
+    text-align: center;
+    border-radius: 25px;
+    color: dimgray;
+}
+  nav {
+        // set animation
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    nav.sticky {
+        font-size: 24px;
+        line-height: 48px;
+        height: 48px;
+        text-align: left;
+        padding-left: 20px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+@media screen and (min-width:976px) {
+  ::-webkit-scrollbar-button {
     background-image: url('');
     background-repeat: no-repeat;
     width: 6px;
@@ -192,52 +137,7 @@ a {
 ::-webkit-scrollbar {
     width: 4px;
 }
-
-.afix {
-    color: dimgray;
-}
-
-#go-top {
-    position: fixed;
-    bottom: 25px;
-    right: 23px;
-    cursor: pointer;
-    display: none;
-    width: 45px;
-    height: 45px;
-    background: rgb(238, 238, 238);
-    font-size: 25px;
-    text-align: center;
-    border-radius: 25px;
-    color: dimgray;
-}
-
-@media screen and (min-width:976px) {
-    .collapsible{
-      width: 95%;
-    }
-    nav {
-        width: 100%;
-        // set animation
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-    }
-
-    nav.sticky {
-        font-size: 24px;
-        line-height: 48px;
-        height: 48px;
-        text-align: left;
-        padding-left: 20px;
-    }
-      nav.sticky .tabs {
-        font-size: 24px;
-        line-height: 48px;
-        height: 48px;
-        text-align: left;
-        padding-left: 20px;
-    }
-
+    
     #go-top:hover {
         background: #333;
         transition: 0.3s;
@@ -258,19 +158,8 @@ a {
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
-        width: 3%;
-        height: 7%;
-    }
 
-    .btn-animation:hover {
-        border-radius: 3px;
-        color: black;
-        transform: scale(1.5);
-        color: dimgray;
-        font-size: 15px;
-        z-index: 10;
     }
-
     .scale-animation:hover {
         transition: 0.30s;
         -webkit-transition: 0.30s;
@@ -329,15 +218,6 @@ a {
         transform: translateY(-10px);
     }
 
-    .news-title {
-        position: relative;
-        bottom: 100px;
-    }
-
-    .bgpicturedownload:hover {
-        border-radius: 15px;
-    }
-
     nav li a:hover {
         font-size: 18px;
         transition: 0.30s;
@@ -354,94 +234,7 @@ a {
         -ms-transition: 0.30s;
         -o-transition: 0.30s;
     }
-
-    .modal-cross {
-        margin-right: 15px;
-    }
-
-    .modaltheme {
-        margin-right: 45px;
-    }
-
-    .modalopacity {
-        margin-right: 75px;
-    }
-
-    .modalfontsize {
-        margin-right: 105px;
-    }
 }
-
-.btnfix {
-    margin-top: 10px;
-    color: #6A5ACD;
-}
-
-.slider-text-name {
-    color: #829995;
-}
-
-.app {
-    position: relative;
-    margin-right: 10px;
-    margin-top: -3px;
-}
-
-.kazkaname {
-    font-size: x-large;
-}
-
-@media screen and (max-width: 976px) {
-    .modal-cross {
-        margin-right: 5px;
-    }
-
-    .modaltheme {
-        margin-right: 35px;
-    }
-
-    .modalopacity {
-        margin-right: 65px;
-    }
-
-    .modalfontsize {
-        margin-right: 95px;
-    }
-    .secondary-content .material-icons{
-  font-size:28px;
-}
-}
-
-.modal-content {
-    font-size: medium;
-}
-
-.kazkaname {
-    font-size: x-large;
-}
-
-.collection {
-    border-radius: 25px;
-}
-
-.btn {
-    border-radius: 25px;
-}
-
-.audfix {
-    position: relative;
-    right: 30px;
-}
-
-.audfix {
-    right: 60px;
-    margin-top: 10px;
-}
-
-.iphonexfix {
-    margin-top: 10px;
-}
-
 @-webkit-keyframes animatebottom {
     from {
         bottom: -100px;
@@ -463,10 +256,6 @@ a {
     }
 }
 
-.hidden {
-    display: none;
-}
-
 .nav-fixed {
     opacity: 0.9;
 }
@@ -476,7 +265,7 @@ a {
     position: relative;
     background-size: 3000px;
     bottom: 210px;
-    height: 720px;
+    height: 800px;
 }
 
 .indexmaincontent {
@@ -491,21 +280,6 @@ a {
 
 html {
     min-height: calc(100vh - 80px);
-}
-
-.bgpicture {
-    height: 230px;
-}
-
-.bgpicturecontent {
-    position: relative;
-    top: 6.5rem;
-}
-
-.bgpicturedownload {
-    position: relative;
-    top: 6rem;
-    border-radius: 5px;
 }
 
 nav {
@@ -584,124 +358,9 @@ footer {
   background-size: 100% 300%;
 }
 
-.indexlaptop {
-    margin-left: 135px;
-}
-
 .sidenav-overlay {
     z-index: 0;
 
-}
-
-.modal-cross {
-    position: absolute;
-    right: 0px;
-    font-size: xx-large;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-}
-
-.modalblack {
-    background-color: black;
-    color: white;
-    transition: 0.30s;
-    -webkit-transition: 0.30s;
-    -moz-transition: 0.30s;
-    -ms-transition: 0.30s;
-    -o-transition: 0.30s;
-}
-
-.modalwhite {
-    background-color: white;
-    color: black;
-    transition: 0.30s;
-    -webkit-transition: 0.30s;
-    -moz-transition: 0.30s;
-    -ms-transition: 0.30s;
-    -o-transition: 0.30s;
-}
-
-.modaltheme {
-    position: absolute;
-    right: 0px;
-    font-size: xx-large;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-}
-
-.modal-close {
-    position: absolute;
-    right: 0px;
-}
-
-.modalblack .modal-close-but {
-    background-color: black;
-    color: white;
-    transition: 0.30s;
-    -webkit-transition: 0.30s;
-    -moz-transition: 0.30s;
-    -ms-transition: 0.30s;
-    -o-transition: 0.30s;
-}
-
-.modalwhite .modal-close-but {
-    background-color: white;
-    color: black;
-    transition: 0.30s;
-    -webkit-transition: 0.30s;
-    -moz-transition: 0.30s;
-    -ms-transition: 0.30s;
-    -o-transition: 0.30s;
-}
-
-.modalyellow {
-    background-color: #d6d48d;
-    color: black;
-    transition: 0.30s;
-    -webkit-transition: 0.30s;
-    -moz-transition: 0.30s;
-    -ms-transition: 0.30s;
-    -o-transition: 0.30s;
-}
-
-.modalopacity {
-    position: absolute;
-    right: 0px;
-    font-size: xx-large;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-}
-
-.modalfontsize {
-    position: absolute;
-    right: 0px;
-    font-size: xx-large;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-}
-.modal{
-  width: 95%;
-}
-.modal .material-icons{
-  font-size: 28px;
-}
-.card-panel a:hover{
-    color:#483d8e;
-}
-.card-panel a{
-    color:#6A5ACD;
 }
 @media screen and (min-width: 1367px){
   html, body{
@@ -717,11 +376,9 @@ footer{
   position: relative;
   top:23%;
 }
-.maintitle{
-    font-size: 32px;
+.decorative-stars{
     position: relative;
-    right: 230px;
-    bottom: 7px;    
+    bottom: 100px;    
 }
 .brand-logo{
     margin-left: 15px;
@@ -736,3 +393,53 @@ footer{
      font-family: Arial, sans-serif;
      font-size:0.9rem;
 }
+.btn{
+    border-radius: 25px;
+}
+.card{
+    width: 230px;
+    color:black;
+    border-radius: 10px;
+}
+.maps{
+
+}
+.upper{
+    position: relative;
+    top:30px;
+}
+a{
+    color: black;
+}
+
+@media screen and (min-width: 768px){
+    .collapsiblecustfull{
+    position: relative;
+    bottom: 370px;
+    margin: 0 auto;
+    background-color: white;
+}
+.slider{
+    height: 95%;
+    width: auto;
+}
+}
+@media screen and (max-width: 768px){
+    .collapsiblecustfull{
+    position: relative;
+    bottom: 280px;
+    margin: 0 auto;}
+.slider{
+    height: 95%;
+    width: auto;
+    z-index: 0 !important; 
+}
+.slidermobile{
+    position: relative;
+    top: 250px;
+}
+}
+nav::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+nav { -ms-overflow-style: none; }

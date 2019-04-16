@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
 </head>
 
-<body style=" background-size: 150% 600% !important;">
+<body>
     <!--
   ____           _   _     _             
  |  _ \ ___  ___| |_(_)___| | __ ___   __
@@ -37,7 +38,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #663399 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
+        background: #efe2a5 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
         background-size: 41px;
     }
     </style>
@@ -91,28 +92,38 @@
     </ul>
     <!--Навбар-->
     <!--Контент-->
+
+
+
+
+
+
+
+
+
+
     <div class="wrapper">
         <div class="content">
-            <!--<div class="bluredforest">
-                <div class="indexmaincontent center-align">
-                    <h5 class="container center-align scale-animation" style="margin-top:70px;">От подвига до награды</h5>
-                    <h4 class="center-align" style="margin-bottom:30px;">Генерал Ивановский</h4>
-                </div>
-            </div>-->
-            <div class="container">
-                <div class="card-panel white">
-                    <span class="-text">
-                    </span>
-                </div>
-                <div class="card-panel white">
-                    <span class="-text">
-                    </span>
-                </div>
-                <div class="card-panel white">
-                    <span class="-text">
-                    </span>
-                </div>
-            </div>
+
+<div class="container">
+<div class="card-panel white">
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="img/medals/zolotayazv.png"></a>
+    <a class="carousel-item" href="#two!"><img src="img/medals/ordenlenina.png"></a>
+    <a class="carousel-item" href="#three!"><img src="img/medals/ordenkrasnogoznameni.png"></a>
+    <a class="carousel-item" href="#four!"><img src="img/medals/ordenkutuzova.png"></a>
+    <a class="carousel-item" href="#five!"><img src="img/medals/ordensuvorova.png"></a>
+    <a class="carousel-item" href="#one!"><img src="img/medals/Orden-Otechestvennoy-voynyi1.png"></a>
+    <a class="carousel-item" href="#two!"><img src="img/medals/Orden-Otechestvennoy-voynyi2.png"></a>
+    <a class="carousel-item" href="#three!"><img src="img/medals/ordenkrasnoizvezdy.png"></a>
+  </div>
+</div>
+</div>
+
+    </div>
+ 
+            
+
         </div>
         <!--Контент-->
         <!--Футер-->
@@ -184,7 +195,7 @@
     });
     //
 
-    //Анимация навбара
+      //Анимация навбара
     $(window).scroll(function() {
         if ($(this).scrollTop() > 250) {
             $('nav').addClass("sticky");
@@ -196,6 +207,10 @@
     });
     //
     $('.dropdown-trigger').dropdown();
+
+     $(document).ready(function(){
+    $('.carousel').carousel();
+  });
     </script>
 </body>
 

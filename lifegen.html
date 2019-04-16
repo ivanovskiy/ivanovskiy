@@ -11,10 +11,11 @@
     <link rel="SHORTCUT ICON" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body style=" background-size: 150% 600% !important;">
+<body>
     <!--
   ____           _   _     _             
  |  _ \ ___  ___| |_(_)___| | __ ___   __
@@ -37,7 +38,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #663399 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
+        background: #efe2a5 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
         background-size: 41px;
     }
     </style>
@@ -95,25 +96,29 @@
     <!--Контент-->
     <div class="wrapper">
         <div class="content">
-            <!--<div class="bluredforest">
-                <div class="indexmaincontent center-align">
-                    <h5 class="container center-align scale-animation" style="margin-top:70px;">От подвига до награды</h5>
-                    <h4 class="center-align" style="margin-bottom:30px;">Генерал Ивановский</h4>
-                </div>
-            </div>-->
-            <div class="container">
-                <div class="card-panel white">
-                    <span class="-text">
-                    </span>
-                </div>
-                <div class="card-panel white">
-                    <span class="-text">
-                    </span>
-                </div>
-                <div class="card-panel white">
-                    <span class="-text">
-                    </span>
-                </div>
+            <div class="container upper">
+                <div class="slidermobile">
+<div class="slider">
+ <img src="img/chereja4.jpg" alt="" width="100%" height="100%"></img>
+ <img src="img/ivanovskiy19801.jpg" alt="" width="100%" height="100%"></img>
+<img src="img/45_8.jpg" alt="" width="100%" height="100%"></img>
+</div>
+</div>
+
+                        <ul class="collapsible black-text container collapsiblecustfull top-animation">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Влюблённый в Черею</div>
+                                <div class="collapsible-body"><a href="chereya.html"><span>C Беларусью Героя Советского Союза Евгения Филипповича Ивановского связывает деревенька Черея Чашникского района Витебской области</span></a></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">place</i>Жизнь, посвящённая родине</div>
+                                <div class="collapsible-body"><a href="rodine.html"><span>Как же складывалась жизнь Евгения Филипповича Ивановского?</span></a></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">whatshot</i>Генерал, который был самим собой</div>
+                                <div class="collapsible-body"><a href="samsab.html"><span>Он умер на 74 году жизни, не дотянув до своего бриллиантового юбилея чуть больше года. В некрологе, который дала «Красная Звезда», было сказано совсем немного: родился, учился, воевал, командовал…</span></a></div>
+                            </li>
+                        </ul>
             </div>
         </div>
         <!--Контент-->
@@ -139,6 +144,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Фреймворк-->
     <script>
+
+
     //Подключение бокового меню
     $(document).ready(function() {
         $('.sidenav').sidenav();
@@ -190,15 +197,20 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > 250) {
             $('nav').addClass("sticky");
-            $('tabs').addClass("hide");
+            $('.tabs').addClass("hide");
         } else {
             $('nav').removeClass("sticky");
-            $('tabs').removeClass("hide");
+            $('.tabs').removeClass("hide");
         }
     });
     //
     $('.dropdown-trigger').dropdown();
+
+    $(document).ready(function(){
+    $('.slider').bxSlider();
+  });
     </script>
+ <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </body>
 
 </html>

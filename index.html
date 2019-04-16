@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body style=" background-size: 150% 600% !important;">
+<body>
     <!--
   ____           _   _     _             
  |  _ \ ___  ___| |_(_)___| | __ ___   __
@@ -37,7 +37,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #663399 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
+        background: #efe2a5 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
         background-size: 41px;
     }
     </style>
@@ -93,21 +93,23 @@
                         </div>
                         <div class="col l6 s12 scale-animation">
                             <h4 class="center-align ">Евгений Филиппович Ивановский:</h4>
-                             <h5 class="container center-align ">генерал, который был самим собой</h5>
+                            <h5 class="container center-align ">генерал, который был самим собой</h5>
                         </div>
                     </div>
+                    <a href="#indexmaintext">
+                        <div class="btn brown scale-animation">Узнать больше</div>
+                    </a>
                 </div>
             </div>
             <div>
-                <h3 class="center-align news-title scale-animation brown-text lighten-4">***</h3>
+                <h3 class="center-align decorative-stars scale-animation brown-text lighten-4" id="indexmaintext">***</h3>
                 <!--Блок новостей-->
                 <div class="container">
-                    <div class="card-panel white center">
+                    <div class="card-panel white">
                         <span class="-text">Мы живем в новом микрорайоне города Витебска Билево. Наш район молодой, красивый. Мы ходим по улицам, читаем их названия. Улица генерала Ивановского, улица Баграмяна… О чем говорят эти названия? Почему улицы названы именами именно этих людей?<br>
                             Много лет прошло, как закончилась самая страшная и кровопролитная война. Война, унесшая десятки миллионов жизней. Война, охватившая все континенты нашей планеты. Великой ценой досталась Победа над фашизмом. И не было фактически ни одной семьи, кого бы не коснулось это горе.<br>
                             Мирное небо над головой, новые красивые города. Это заслуга целого поколения, перенесшего на своих плечах все: разлуку, смерть и горе, разруху и голод, боль и слезы, а затем радость Великой Победы. Слишком многое выпало на плечи этого поколения, и оно все выдержало.<br>
                             Благодарные земляки помнят о своих героях. А у тех, кому посчастливилось выжить, навсегда остались в памяти события тех суровых лет. Невозможно рассказать обо всех фронтовиках, живых и погибших, хотя каждый из них заслуживает этого. Наш сайт посвящен Герою Советского Союза, нашему земляку, Евгению Филипповичу Ивановскому. Его именем названа одна из улиц в нашем микрорайоне. А в 2018 году исполнилось 100 лет со дня рождения этого выдающегося генерала.  
-                            <img src="img/pictureblack.jpg" alt="" class="picturecenter">
                         </span>
                     </div>
                 </div>
@@ -190,6 +192,7 @@
             $('nav').addClass("sticky");
         } else {
             $('nav').removeClass("sticky");
+            $('tabs').addClass("hide");
         }
     });
     //
