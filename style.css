@@ -285,7 +285,7 @@ html {
 
 nav {
     color: #fff;
-    background: linear-gradient(-45deg, #efe2a5, #b7ab71, #998d55, #cec184);
+    background-color:#b77638 !important;
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
@@ -479,23 +479,24 @@ nav { -ms-overflow-style: none; }
     top:350px;
     left:100px;
     color: brown;
-            transition: 0.8s;
+            transition: 0.2s;
 
 }
 .timelinemenubut:hover{
-        transition: 0.8s;
+        transition: 0.5s;
     opacity: 0.7;
-    background-color: black;
+    background-color: #d87f3a;
     width: 100px;
     color: white;
     position: relative;
-    left: 20px;
+    left: 5px;
 
 }
 .timelinemenubut{
-    transition: 0.8s;
+    transition: 0.5s;
     position:relative;
-    left: 0px;
+    right: 100px;
+     opacity: 0;
 
 }
   
@@ -512,4 +513,18 @@ nav { -ms-overflow-style: none; }
 .MemoryHiddenCard{
      position: relative;
     top:1800px;
+}
+.center img{
+    border-radius: 10px;
+}
+.timelinemenu .sticky{
+    transition: 0.3s;
+    opacity: 1;
+    right: 0px;
+}
+.hidden{
+opacity:0;
+}
+.visible{
+opacity:1;
 }

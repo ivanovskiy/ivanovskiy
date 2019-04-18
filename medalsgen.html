@@ -8,6 +8,7 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta name="yandex-verification" content="76ccf37986fc5237" />
     <title>Ивановский</title>
+            <link rel="stylesheet" type="text/css" href="animate.css" />
     <link rel="SHORTCUT ICON" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
@@ -172,7 +173,7 @@
 
     //Кнопка Вверх
     $(document).ready(function() {
-        $('body').append('<i class="material-icons" id="go-top"><span id="go-top-icon">keyboard_arrow_up</span></i>');
+        $('body').append('<i class="material-icons z-depth-2" id="go-top"><span id="go-top-icon">keyboard_arrow_up</span></i>');
     });
     $(function() {
         $.fn.scrollToTop = function() {
@@ -209,7 +210,15 @@
      $(document).ready(function(){
     $('.carousel').carousel();
   });
+    jQuery(document).ready(function() {
+jQuery('.post').addClass("hidden").viewportChecker({
+classToAdd: 'visible animated fadeIn',
+offset: 100
+});
+});
     </script>
+
+<script src="js/jquery.viewportchecker.js"></script>
 </body>
 
 </html>
