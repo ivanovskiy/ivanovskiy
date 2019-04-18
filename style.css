@@ -424,6 +424,12 @@ a{
     bottom: 370px;
     margin: 0 auto;
     background-color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+  .collapsiblecustfull:hover{
+    opacity: 1;
+    transition: 0.3s;
 }
 .slider{
     height: 85%;
@@ -551,7 +557,7 @@ opacity:1;
     width:175%;
 }
 #vk_poll{
-    width: 100% !important;
+    width: 10% !important;
     margin: 0 auto;
 }
 .modal{
