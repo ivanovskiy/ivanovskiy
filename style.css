@@ -568,4 +568,5 @@ opacity:1;
 }
 .modal{
     border-radius: 25px;
+    overflow-y: hidden;
 }
