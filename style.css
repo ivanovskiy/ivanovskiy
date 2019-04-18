@@ -449,8 +449,14 @@ a{
     bottom: 15px;
     left: 35%;
 
-}
 
+}
+.modal{
+    width: 97% !important;
+}
+    .card{
+    width:100% !important;
+}
 
 
     .card img{
