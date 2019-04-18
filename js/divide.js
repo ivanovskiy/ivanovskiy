@@ -1,8 +1,9 @@
 var MinskAbout = document.getElementById("MinskAbout"),
     VitebskAbout = document.getElementById("VitebskAbout"),
     ChasnikiAbout = document.getElementById("ChashnikiAbout");
-    MoscowAbout = document.getElementById("MoscowAbout");
-    SlyckAbout = document.getElementById("SlyckAbout");
+MoscowAbout = document.getElementById("MoscowAbout");
+SlyckAbout = document.getElementById("SlyckAbout");
+
 function MinskShow() {
 
     MinskAbout.classList.remove("hide");
@@ -25,7 +26,7 @@ function VitebskShow() {
 
 function ChashnikiShow() {
 
-   
+
     ChasnikiAbout.classList.remove("hide");
     VitebskAbout.classList.add("hide");
     MinskAbout.classList.add("hide");
@@ -33,9 +34,10 @@ function ChashnikiShow() {
     SlyckAbout.classList.add("hide");
 
 }
+
 function SlyckShow() {
 
-   
+
     SlyckAbout.classList.remove("hide");
     VitebskAbout.classList.add("hide");
     MinskAbout.classList.add("hide");
@@ -43,9 +45,10 @@ function SlyckShow() {
     ChashnikiAbout.classList.add("hide");
 
 }
+
 function MoscowShow() {
 
-   
+
     MoscowAbout.classList.remove("hide");
     VitebskAbout.classList.add("hide");
     MinskAbout.classList.add("hide");
