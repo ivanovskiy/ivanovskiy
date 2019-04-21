@@ -61,7 +61,7 @@
     </script>
     <!-- Прелоадер -->
     <!-- Навбар -->
-    <nav class="nav-fixed">
+    <nav class="nav-fixed navtransparent">
         <div class="nav-wrapper">
             <div>
                 <a href="index.html" class="brand-logo scale-animation">Ивановский</a> <!-- Название страницы -->
@@ -91,8 +91,10 @@
     <!-- Контент -->
     <div class="wrapper">
         <div class="content">
-            <div class="bluredforest"> <!-- Размытый фон -->
-                <div class="indexmaincontent center-align"> <!-- Контент на размытом фоне -->
+            <div class="bluredforest">
+                <!-- Размытый фон -->
+                <div class="indexmaincontent center-align">
+                    <!-- Контент на размытом фоне -->
                     <div class="row">
                         <div class="col l6 s12">
                             <img src="img/colorized-image.jpg" alt="" width="35%" height="35%">
@@ -133,7 +135,7 @@
                         <div id="vk_poll"></div>
                     </div>
                     <div class="modal-footer hide">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+                        <a href="#!"></a>
                     </div>
                 </div>
                 <!-- Всплывающее окно -->
@@ -198,10 +200,12 @@
 
     //Анимация навбара
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 250) {
+        if ($(this).scrollTop() > 130) {
             $('nav').addClass("sticky");
+            $('nav').removeClass("navtransparent");
         } else {
             $('nav').removeClass("sticky");
+            $('nav').addClass("navtransparent");
         }
     });
     //
