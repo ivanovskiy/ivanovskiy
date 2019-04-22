@@ -7,7 +7,7 @@
                                          
 */
 body {
-    background:url(img/bg.jpg);
+    background: url(img/bg.jpg);
     background-repeat: repeat;
     background-size: 300px 300px;
     color: #FFFFFF;
@@ -21,6 +21,7 @@ body {
     overflow-x: hidden;
     font-family: "Century Gothic";
 }
+
 html,
 body {
     scroll-behavior: smooth;
@@ -41,16 +42,14 @@ body {
 
 .footer-copyright {
     font-family: "timeburnernormal";
-      top:10px;
-  position: relative;
-
+    top: 10px;
+    position: relative;
 
 }
 
 .pointer {
     cursor: pointer;
 }
-
 .nav-fixed {
     position: fixed;
     right: 0;
@@ -58,6 +57,29 @@ body {
     top: 0;
     margin-bottom: 0px;
     z-index: 997;
+
+}
+
+.navtransparent {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+nav {
+    background-color: #795548;
+    opacity: 0.9;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+nav.sticky {
+    font-size: 24px;
+    line-height: 48px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 48px;
+
 }
 
 .card-panel {
@@ -86,57 +108,39 @@ body {
     border-radius: 25px;
     color: dimgray;
 }
-.navtransparent{
-    background-color: transparent !important; 
-    box-shadow: none;
-}
-  nav {
-    border-radius: 0px 0px 10px 10px;
-        // set animation
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-    }
-    nav.sticky {
-        font-size: 24px;
-        line-height: 48px;
-              -webkit-transition: 0.3s;
-        transition: 0.3s;
-        height: 48px;
-  
-    }
 
 @media screen and (min-width:976px) {
-  ::-webkit-scrollbar-button {
-    background-image: url('');
-    background-repeat: no-repeat;
-    width: 6px;
-    height: 0px
-}
+    ::-webkit-scrollbar-button {
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 6px;
+        height: 0px
+    }
 
-::-webkit-scrollbar-track {
-    background-color: #ecedee;
-    
-}
+    ::-webkit-scrollbar-track {
+        background-color: #ecedee;
 
-::-webkit-scrollbar-thumb {
-    background-color: #6dc0c8;
-}
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #56999f;
-}
+    ::-webkit-scrollbar-thumb {
+        background-color: #6dc0c8;
+    }
 
-::-webkit-resizer {
-    background-image: url('');
-    background-repeat: no-repeat;
-    width: 4px;
-    height: 0px
-}
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #56999f;
+    }
 
-::-webkit-scrollbar {
-    width: 4px;
-}
-    
+    ::-webkit-resizer {
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 4px;
+        height: 0px
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+
     #go-top:hover {
         background: #333;
         transition: 0.3s;
@@ -159,6 +163,7 @@ body {
         -o-transition: 0.3s;
 
     }
+
     .scale-animation:hover {
         transition: 0.30s;
         -webkit-transition: 0.30s;
@@ -234,6 +239,7 @@ body {
         -o-transition: 0.30s;
     }
 }
+
 @-webkit-keyframes animatebottom {
     from {
         bottom: -100px;
@@ -255,9 +261,7 @@ body {
     }
 }
 
-.nav-fixed {
-    opacity: 0.9;
-}
+
 
 .bluredforest {
     background-image: url(img/bggg.jpg);
@@ -282,52 +286,8 @@ html {
     min-height: calc(100vh - 80px);
 }
 
-nav {
-    color: #fff;
-    background-color:#795548 !important;
-}
 
-@-webkit-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
 
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
 
 * {
     margin: 0;
@@ -347,143 +307,161 @@ nav {
 footer {
     flex: 0 0 auto;
 }
-
-.page-footer {
-    background-color: #150E3B;
-  background-repeat: no-repeat;
-  background-size: 100% 300%;
-}
-
 .sidenav-overlay {
     z-index: 0;
 
 }
-@media screen and (min-width: 1367px){
-  html, body{
-    font-size: 1.3rem;
+
+@media screen and (min-width: 1367px) {
+
+    html,
+    body {
+        font-size: 1.3rem;
     }
 }
-footer{
-  text-align: center;
 
+footer {
+    text-align: center;
+}
 
-}
-#go-top-icon{
-  position: relative;
-  top:23%;
-}
-.decorative-stars{
+#go-top-icon {
     position: relative;
-    bottom: 100px;    
+    top: 23%;
 }
-.brand-logo{
+
+.decorative-stars {
+    position: relative;
+    bottom: 100px;
+}
+
+.brand-logo {
     margin-left: 15px;
 }
-.nav .sticky .tab{
-    display: none;
-}
-.citata{
+
+.citata {
     font-size: 0.8rem;
 }
-.text{
-     font-family: Arial, sans-serif;
-     font-size:0.9rem;
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
 }
-.btn{
+
+.btn {
     border-radius: 25px;
 }
 
-.maps{
- height: 500px;
+.maps {
+    height: 500px;
 }
-.upper{
+
+.upper {
     position: relative;
-    top:30px;
+    top: 30px;
 }
-a{
+
+a {
     color: black;
 }
 
-@media screen and (min-width: 768px){
-    .MemoryHiddenBtn{
-    position: absolute;
-    bottom: 15px;
-    left: 45%;
-}
+@media screen and (min-width: 768px) {
+    .MemoryHiddenBtn {
+        position: absolute;
+        bottom: 15px;
+        left: 45%;
+    }
 
 
 
 
-    .collapsiblecustfull{
-    position: relative;
-    bottom: 370px;
-    margin: 0 auto;
-    background-color: white;
-    opacity: 0.7;
-    transition: 0.3s;
-}
-  .collapsiblecustfull:hover{
-    opacity: 1;
-    transition: 0.3s;
-}
-.slider{
-    height: 85%;
-    width: auto;
-    background-color: gray;
+    .collapsiblecustfull {
+        position: relative;
+        bottom: 370px;
+        margin: 0 auto;
+        background-color: white;
+        opacity: 0.7;
+        transition: 0.3s;
+    }
 
-}
-.card img{
-    width: 100%;
-    height: 350px;
-}
+    .collapsiblecustfull:hover {
+        opacity: 1;
+        transition: 0.3s;
+    }
 
-}
-@media screen and (max-width: 768px){
-    .MemoryHiddenBtn{
-    position: absolute;
-    bottom: 15px;
-    left: 35%;
+    .slider {
+        height: 85%;
+        width: auto;
+        background-color: gray;
 
+    }
+
+    .card img {
+        width: 100%;
+        height: 350px;
+    }
 
 }
-.modal{
-    width: 93% !important;
-}
-    .card{
-    width:100% !important;
-}
+
+@media screen and (max-width: 768px) {
+          body{
+        font-size: 16px !important;
+    }
+
+    .MemoryHiddenBtn {
+        position: absolute;
+        bottom: 15px;
+        left: 35%;
 
 
-    .card img{
+    }
+
+    .modal {
+        width: 93% !important;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+
+    .card img {
         height: 100%;
+    }
+
+    .collapsiblecustfull {
+        position: relative;
+        bottom: 280px;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    .slider {
+        height: 95%;
+        width: auto;
+        z-index: 0 !important;
+    }
+
+    .slidermobile {
+        position: relative;
+        top: 270px;
+    }
+
+    .timelinemenu h6 {
+        display: none;
+    }
 }
 
-    .collapsiblecustfull{
-    position: relative;
-    bottom: 280px;
-    margin: 0 auto;
- background-color: white;
- }
-
-.slider{
-    height: 95%;
-    width: auto;
-    z-index: 0 !important; 
+nav::-webkit-scrollbar {
+    width: 0;
 }
-.slidermobile{
-    position: relative;
-    top: 270px;
-}
-.timelinemenu h6{
-    display: none;
-}
-}
-nav::-webkit-scrollbar { width: 0; }
 
 /* ie 10+ */
-nav { -ms-overflow-style: none; }
-.timelinemenubut:hover{
-        transition: 0.5s;
+nav {
+    -ms-overflow-style: none;
+}
+
+.timelinemenubut:hover {
+    transition: 0.5s;
     opacity: 0.7;
     background-color: #d87f3a;
     width: 100px;
@@ -492,76 +470,91 @@ nav { -ms-overflow-style: none; }
     left: 5px;
 
 }
-.timelinemenubut{
+
+.timelinemenubut {
     transition: 0.5s;
-    position:relative;
+    position: relative;
     right: 100px;
-     opacity: 0;
+    opacity: 0;
 
 }
-  
-.collection{
+
+.collection {
     border-radius: 10px;
 }
-#minsk{
-      background-image: url(img/minskbg.jpg);
-      background-size:100% 300px;
+
+.card {
+    color: black;
 }
-.card{
-    color:black;
+
+.MemoryHiddenCard {
+    position: relative;
+    top: 1800px;
 }
-.MemoryHiddenCard{
-     position: relative;
-    top:1800px;
-}
-.center img{
+
+.center img {
     border-radius: 10px;
     margin-top: 5px;
 }
-.timelinemenu .sticky{
+
+.timelinemenu .sticky {
     transition: 0.3s;
     opacity: 1;
     right: 0px;
 }
-.hidden{
-opacity:0;
-}
-.visible{
-opacity:1;
-}
-@media screen and (min-width: 1367px){
-    .timelinemenu{
-    position: absolute;
-    position: fixed;
-    top:350px;
-    left:80px;
-    color: brown;
-            transition: 0.2s;
 
-
+.hidden {
+    opacity: 0;
 }
 
+.visible {
+    opacity: 1;
 }
-@media screen and (max-width: 1366px){
-    .timelinemenu{
-    position: absolute;
-    position: fixed;
-    top:260px;
-    left:80px;
-    color: brown;
-            transition: 0.2s;
+
+@media screen and (min-width: 1367px) {
+    .timelinemenu {
+        position: absolute;
+        position: fixed;
+        top: 350px;
+        left: 80px;
+        color: brown;
+        transition: 0.2s;
+    }
+    body{
+        font-size: 18px;
+    }
 
 }
 
+@media screen and (max-width: 1366px) {
+    .timelinemenu {
+        position: absolute;
+        position: fixed;
+        top: 260px;
+        left: 80px;
+        color: brown;
+        transition: 0.2s;
+    }
+      body{
+        font-size: 20px;
+    }
+
 }
-    .card{
-    width:175%;
+
+.card {
+    width: 175%;
 }
-#vk_poll{
+
+#vk_poll {
 
     margin: 0 auto;
 }
-.modal{
+
+.modal {
     border-radius: 25px;
     overflow-y: hidden;
+}
+.contacts{
+    font-size: 15px;
+    display: inline-flex;
 }
