@@ -589,3 +589,7 @@ nav {
         width: auto;
         z-index: 0 !important;
     }
+.medalblock{
+    margin: 0 auto;
+    margin-top: 50px;
+}
