@@ -185,6 +185,27 @@ nav.sticky {
         -ms-transition: 0.30s;
         -o-transition: 0.30s;
     }
+    .medalscale-animation{
+        transition: 0.30s;
+        -webkit-transition: 0.30s;
+        -moz-transition: 0.30s;
+        -ms-transition: 0.30s;
+        -o-transition: 0.30s;
+    }
+    .medalscale-animation:hover{
+        transition: 0.30s;
+        -webkit-transition: 0.30s;
+        -moz-transition: 0.30s;
+        -ms-transition: 0.30s;
+        -o-transition: 0.30s;
+        transform: scale(3);
+        -webkit-transform: scale(1.7);
+        -moz-transform: scale(1.7);
+        -o-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+        transform: scale(1.7);
+       
+    }
 
     .card-panel:hover {
         transition: 0.30s;
@@ -480,7 +501,12 @@ nav {
 }
 
 .collection {
-    border-radius: 10px;
+    border-radius: 25px;
+        color: dimgray;
+        margin-top:25px;
+}
+.collection .title{
+    font-size: 25px !important;
 }
 
 .card {
@@ -558,3 +584,8 @@ nav {
     font-size: 15px;
     display: inline-flex;
 }
+ .slider {
+        height: 95%;
+        width: auto;
+        z-index: 0 !important;
+    }
