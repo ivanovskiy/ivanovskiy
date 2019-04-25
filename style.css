@@ -68,7 +68,6 @@ body {
 nav {
     background-color: #795548;
     opacity: 0.9;
-    border-radius: 0px 0px 10px 10px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -391,7 +390,9 @@ a {
         bottom: 15px;
         left: 45%;
     }
-
+nav{
+       border-radius: 0px 0px 10px 10px;
+}
 
 
 
