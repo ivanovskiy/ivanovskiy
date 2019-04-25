@@ -337,8 +337,13 @@ footer {
 
     html,
     body {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
+    .bluredforest {
+    height: 1100px;
+
+}
+
 }
 
 footer {
@@ -350,7 +355,7 @@ footer {
     top: 23%;
 }
 
-.decorative-stars {
+.decorative-block {
     position: relative;
     bottom: 100px;
 }
@@ -547,7 +552,7 @@ nav {
         transition: 0.2s;
     }
     body{
-        font-size: 18px;
+        font-size: 22px;
     }
 
 }
