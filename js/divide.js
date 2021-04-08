@@ -1,8 +1,10 @@
-var MinskAbout = document.getElementById("MinskAbout"),
-    VitebskAbout = document.getElementById("VitebskAbout"),
-    ChasnikiAbout = document.getElementById("ChashnikiAbout");
-MoscowAbout = document.getElementById("MoscowAbout");
-SlyckAbout = document.getElementById("SlyckAbout");
+let MinskAbout = document.getElementById("MinskAbout");
+let VitebskAbout = document.getElementById("VitebskAbout");
+let ChasnikiAbout = document.getElementById("ChashnikiAbout");
+let MoscowAbout = document.getElementById("MoscowAbout");
+let SlyckAbout = document.getElementById("SlyckAbout");
+let SchoolAbout = document.getElementById("SchoolAbout");
+
 
 function MinskShow() {
 
@@ -11,6 +13,7 @@ function MinskShow() {
     ChashnikiAbout.classList.add("hide");
     SlyckAbout.classList.add("hide");
     MoscowAbout.classList.add("hide");
+    SchoolAbout.classList.ad('hide');
 
 }
 
@@ -21,6 +24,7 @@ function VitebskShow() {
     ChashnikiAbout.classList.add("hide");
     SlyckAbout.classList.add("hide");
     MoscowAbout.classList.add("hide");
+    SchoolAbout.classList.ad('hide');
 
 }
 
@@ -32,6 +36,7 @@ function ChashnikiShow() {
     MinskAbout.classList.add("hide");
     MoscowAbout.classList.add("hide");
     SlyckAbout.classList.add("hide");
+    SchoolAbout.classList.ad('hide');
 
 }
 
@@ -43,6 +48,7 @@ function SlyckShow() {
     MinskAbout.classList.add("hide");
     MoscowAbout.classList.add("hide");
     ChashnikiAbout.classList.add("hide");
+    SchoolAbout.classList.ad('hide');
 
 }
 
@@ -54,5 +60,15 @@ function MoscowShow() {
     MinskAbout.classList.add("hide");
     ChashnikiAbout.classList.add("hide");
     SlyckAbout.classList.add("hide");
+    SchoolAbout.classList.ad('hide');
 
+}
+
+function SchoolShow(){
+    MoscowAbout.classList.add("hide");
+    VitebskAbout.classList.add("hide");
+    MinskAbout.classList.add("hide");
+    ChashnikiAbout.classList.add("hide");
+    SlyckAbout.classList.add("hide");
+    SchoolAbout.classList.remove('hide');
 }

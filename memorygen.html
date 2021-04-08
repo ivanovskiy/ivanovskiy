@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-        <meta name="theme-color" content="#edd7a8">
+    <meta name="theme-color" content="#edd7a8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>Ивановский: Память о Генерале</title>
@@ -25,45 +25,49 @@
 -->
     <!--Прелоадер-->
     <style type="text/css">
-    #hellopreloader>p {
-        display: none;
-    }
+        #hellopreloader>p {
+            display: none;
+        }
 
-    #hellopreloader_preload {
-        display: block;
-        position: fixed;
-        z-index: 99999;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #edd7a8 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
-        background-size: 41px;
-    }
+        #hellopreloader_preload {
+            display: block;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #edd7a8 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
+            background-size: 41px;
+        }
     </style>
     <div id="hellopreloader">
         <div id="hellopreloader_preload"></div>
     </div>
     <script type="text/javascript">
-    var hellopreloader = document.getElementById("hellopreloader_preload");
+        var hellopreloader = document.getElementById("hellopreloader_preload");
 
-    function fadeOutnojquery(el) {
-        el.style.opacity = 1;
-        var interhellopreloader = setInterval(function() {
-            el.style.opacity = el.style.opacity - 0.05;
-            if (el.style.opacity <= 0.05) {
-                clearInterval(interhellopreloader);
-                hellopreloader.style.display = "none";
-            }
-        }, 16);
-    }
-    window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 50); };
+        function fadeOutnojquery(el) {
+            el.style.opacity = 1;
+            var interhellopreloader = setInterval(function () {
+                el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <= 0.05) {
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }
+            }, 16);
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader);
+            }, 50);
+        };
     </script>
     <!--Прелоадер-->
     <!--Навбар-->
     <nav class="nav-extended nav-fixed">
         <div class="nav-wrapper">
-             <a href="index.html" class="brand-logo scale-animation">Ивановский</a>
+            <a href="index.html" class="brand-logo scale-animation">Ивановский</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Главная</a></li>
@@ -98,8 +102,11 @@
             </div>-->
             <div class="container">
                 <div class="card-panel white hoverable post z-depth-2">
-                    Очень яркую и в то же время скромную жизнь прожил Евгений Филиппович Ивановский, жизнь, основанную на подвиге и самоотдаче, жизнь, посвященную служению Родине, людям. Жизненный путь генерала Ивановского может служить примером для нас, будущих поколений.<br>
-                    Познакомившись с биографией Е.Ф.Ивановского, с воспоминаниями о нем, прочитав его монографии, мы заинтересовались, как же увековечена память об этом выдающемся генерале, и узнали следующее.
+                    Очень яркую и в то же время скромную жизнь прожил Евгений Филиппович Ивановский, жизнь, основанную
+                    на подвиге и самоотдаче, жизнь, посвященную служению Родине, людям. Жизненный путь генерала
+                    Ивановского может служить примером для нас, будущих поколений.<br>
+                    Познакомившись с биографией Е.Ф.Ивановского, с воспоминаниями о нем, прочитав его монографии, мы
+                    заинтересовались, как же увековечена память об этом выдающемся генерале, и узнали следующее.
                     <span class="-text">
                     </span>
                 </div>
@@ -126,7 +133,7 @@
                         <div class="col s12 l6">
                             <div class="row">
                                 <div class="col s12 m7">
-                                    <div id="vtbback"  class="card top-animation hoverable post z-depth-2">
+                                    <div id="vtbback" class="card top-animation hoverable post z-depth-2">
                                         <div class="card-image">
                                             <img src="img/3-22.jpg">
                                             <span class="card-title">Витебск</span>
@@ -186,7 +193,8 @@
                                             <span class="card-title">Москва</span>
                                         </div>
                                         <div class="card-content">
-                                            <p>Зал славы музея Великой Отечественной войны<br/> Новодевичье кладбище</p>
+                                            <p>Зал славы музея Великой Отечественной войны<br /> Новодевичье кладбище
+                                            </p>
                                         </div>
                                         <div class="card-action">
                                             <a href="#MoscowAbout" onclick="MoscowShow()">Подробнее</a>
@@ -204,7 +212,8 @@
                                             <span class="card-title">Черея</span>
                                         </div>
                                         <div class="card-content">
-                                            <p> Черея борется за <br> право названия одной из улиц в честь Ивановского</p>
+                                            <p> Черея борется за <br> право названия одной из улиц в честь Ивановского
+                                            </p>
                                         </div>
                                         <div class="card-action pointer">
                                             <a>Скоро</a>
@@ -222,10 +231,17 @@
                                             <span class="card-title">Атаку начинали танкисты</span>
                                         </div>
                                         <div class="card-content">
-                                            <p>Генерал армии Е. Ф. Ивановский рассказывает о ратных делах своих боевых друзей, воинов 2-го (впоследствии 8-го гвардейского) танкового корпуса, которые отличились в сражениях Великой Отечественной войны На Дону, под Сталинградом и Воронежем, на Курской дуге, в Варшавско-Люблинской и других операциях, <br/>повествует о воинском мастерстве, мужестве и подвигах танкистов, о боевом братстве <br>Красной Армии и Войска Польского.</p>
+                                            <p>Генерал армии Е. Ф. Ивановский рассказывает о ратных делах своих боевых
+                                                друзей, воинов 2-го (впоследствии 8-го гвардейского) танкового корпуса,
+                                                которые отличились в сражениях Великой Отечественной войны На Дону, под
+                                                Сталинградом и Воронежем, на Курской дуге, в Варшавско-Люблинской и
+                                                других операциях, <br />повествует о воинском мастерстве, мужестве и
+                                                подвигах танкистов, о боевом братстве <br>Красной Армии и Войска
+                                                Польского</p>
                                         </div>
                                         <div class="card-action pointer">
-                                            <a href="http://militera.lib.ru/memo/russian/ivanovsky_ef/index.html" target="_blank">Читать</a>
+                                            <a href="http://militera.lib.ru/memo/russian/ivanovsky_ef/index.html"
+                                                target="_blank">Читать</a>
                                         </div>
                                     </div>
                                 </div>
@@ -240,10 +256,39 @@
                                             <span class="card-title">Победы немеркнущий свет</span>
                                         </div>
                                         <div class="card-content">
-                                            <p>В книге рассказывается о Великой Отечественной войне, активным участником которой был генерал, о боях за освобождение Белоруссии, подвигах советских воинов и партизан, совершенных ими в борьбе с немецко-фашистскими захватчиками, мирных буднях солдат, сержантов и офицеров Краснознаменного Белорусского военного округа. В книге приводятся многие малоизвестные факты, свидетельствующие о мужестве и героизме защитников Страны Советов</p>
+                                            <p>В книге рассказывается о Великой Отечественной войне, активным участником
+                                                которой был генерал, о боях за освобождение Белоруссии, подвигах
+                                                советских воинов и партизан, совершенных ими в борьбе с
+                                                немецко-фашистскими захватчиками, мирных буднях солдат, сержантов и
+                                                офицеров Краснознаменного Белорусского военного округа. В книге
+                                                приводятся многие малоизвестные факты, свидетельствующие о мужестве и
+                                                героизме защитников Страны Советов</p>
                                         </div>
                                         <div class="card-action pointer">
-                                            <a href="http://militera.lib.ru/memo/russian/ivanovsky_ef/index.html" target="_blank">Скоро</a>
+                                            <a href="http://militera.lib.ru/memo/russian/ivanovsky_ef/index.html"
+                                                target="_blank">Скоро</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <div class="row">
+                                <div class="col s12 m7">
+                                    <div class="card top-animation hoverable post z-depth-2">
+                                        <div class="card-image">
+                                            <img src="img/school47.jpg">
+                                            <span class="card-title">Школа им. Е. Ф. Ивановского</span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>1 сентября 2020 года состоялось торжественное открытие нового учреждения
+                                                образования в молодом микрорайоне нашего города начала функционировать
+                                                школа № 47 города Витебска имени Евгения Филиповича Ивановского, которая
+                                                распахнула двери перед более чем двумя тысячами учеников Первомайского
+                                                района</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#SchoolAbout" onclick="SchoolShow()">Подробнее</a>
                                         </div>
                                     </div>
                                 </div>
@@ -257,26 +302,37 @@
                         <span class="-text">
                             В Витебске в нашем микрорайоне Билево есть улица генерала Ивановского.
                             <div class="center">
-                                <img src="img/3-22.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img>
+                                <img src="img/3-22.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="100%" height="100%"></img>
                             </div>
-                             <div class="center">
-                                <img src="img/dobronom.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img>
-                            </div>
-                             <div class="center">
-                                <img src="img/vitebsk.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img>
-                            </div>
-                             <div class="center">
-                                <img src="img/pasportzdan.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img>
-                            </div>
-                            Мы обратились с запросом в Витебский городской исполнительный комитет и узнали, что решением от 13 марта 2007 года № 250 улице в строящемся микрорайоне Билево было присвоено наименование - улица имени Героя Советского Союза, генерала армии Ивановского Е.Ф. (улица генерала Ивановского). Данное решение было принято в связи с обращением Министерства обороны Республики Беларусь.
-                            Улица Генерала Ивановского в Витебске – это улица новая, светлая, красивая. Многоэтажные дома, детские площадки, супермаркеты по длине больше чем 600 метров
                             <div class="center">
-                                <img src="img/document.png" class="z-depth-2 hoverable top-animation post" alt="" width="65%" height="65%"></img>
+                                <img src="img/dobronom.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="100%" height="100%"></img>
                             </div>
-                            В дальнейшей перспективе – продление троллейбусного сообщения по проспекту Строителей до улицы генерала Ивановского в микрорайоне Билево. Строительство планируют завершить в 2020 году. Городские власти делают все, чтобы жить в новых микрорайонах было удобно.
+                            <div class="center">
+                                <img src="img/vitebsk.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="100%" height="100%"></img>
+                            </div>
+                            <div class="center">
+                                <img src="img/pasportzdan.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="100%" height="100%"></img>
+                            </div>
+                            Мы обратились с запросом в Витебский городской исполнительный комитет и узнали, что решением
+                            от 13 марта 2007 года № 250 улице в строящемся микрорайоне Билево было присвоено
+                            наименование - улица имени Героя Советского Союза, генерала армии Ивановского Е.Ф. (улица
+                            генерала Ивановского). Данное решение было принято в связи с обращением Министерства обороны
+                            Республики Беларусь.
+                            Улица Генерала Ивановского в Витебске – это улица новая, светлая, красивая. Многоэтажные
+                            дома, детские площадки, супермаркеты по длине больше чем 600 метров
+                            <div class="center">
+                                <img src="img/document.png" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="65%" height="65%"></img>
+                            </div>
+
                         </span>
                         <div class="center">
-                            <img src="img/3137.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img>
+                            <img src="img/3137.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%"
+                                height="100%"></img>
                         </div>
                         <div><a href="#vtbback">
                                 <div class="btn brown scale-animation MemoryHiddenBtn">Вернуться</div>
@@ -285,10 +341,12 @@
                     <div class="MemoryHiddenCard card-panel white hide hoverable" id="MinskAbout">
                         <h6>Минск</h6>
                         <span class="-text">
-                            В 1999 году в Минске на здании штаба и управления Министерства Обороны появилась мемориальная доска с барельефом Е.Ф.Ивановского.
+                            В 1999 году в Минске на здании штаба и управления Министерства Обороны появилась
+                            мемориальная доска с барельефом Е.Ф.Ивановского.
                         </span>
                         <div class="center">
-                            <img src="img/45_13.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img>
+                            <img src="img/45_13.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%"
+                                height="100%"></img>
                         </div>
                         <div><a href="#mback">
                                 <div class="btn brown scale-animation MemoryHiddenBtn">Вернуться</div>
@@ -299,7 +357,8 @@
                         <span class="-text">
                             Портрет Е.Ф.Ивановского размещен на Аллее героев в Чашниках.
                             <div class="center">
-                                <img src="img/alleyageroev.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="60%" height="60%"></img>
+                                <img src="img/alleyageroev.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="60%" height="60%"></img>
                             </div>
                         </span>
                         <div><a href="#chback">
@@ -309,13 +368,17 @@
                     <div class="MemoryHiddenCard card-panel white hide hoverable" id="SlyckAbout">
                         <h6>Слуцк</h6>
                         <span class="-text">
-                            Именем генерала Ивановского названа улица в Слуцке. Евгений Ивановский четыре года был командиром танковой дивизии в Слуцке.
+                            Именем генерала Ивановского названа улица в Слуцке. Евгений Ивановский четыре года был
+                            командиром танковой дивизии в Слуцке.
                             <div class="center">
-                                <img src="img/ivanovskogo01.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img></div>
+                                <img src="img/ivanovskogo01.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="100%" height="100%"></img></div>
                             <div class="center">
-                                <img src="img/ivanovskogo05.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img></div>
+                                <img src="img/ivanovskogo05.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="100%" height="100%"></img></div>
                             <div class="center">
-                                <img src="img/ivanovskogo10.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img></div>
+                                <img src="img/ivanovskogo10.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="100%" height="100%"></img></div>
                         </span>
                         <div><a href="#slback">
                                 <div class="btn brown scale-animation MemoryHiddenBtn">Вернуться</div>
@@ -326,10 +389,35 @@
                         <span class="-text">
                             В Москве на Новодевичьем кладбище установлен надгробный памятник.
                             <div class="center">
-                                <img src="img/mogila.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="65%" height="65%"></img></div>
-                            Имя героя высечено золотыми буквами в зале Славы Центрального музея Великой Отечественной войны в Парке Победы города Москвы.
+                                <img src="img/mogila.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="65%" height="65%"></img></div>
+                            Имя героя высечено золотыми буквами в зале Славы Центрального музея Великой Отечественной
+                            войны в Парке Победы города Москвы.
                             <div class="center">
-                                <img src="img/muzey_velikoy_otechestvennoy_voyny_5.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="100%" height="100%"></img></div>
+                                <img src="img/muzey_velikoy_otechestvennoy_voyny_5.jpg"
+                                    class="z-depth-2 hoverable top-animation post" alt="" width="100%"
+                                    height="100%"></img></div>
+                        </span>
+                        <div><a href="#moscback">
+                                <div class="btn brown scale-animation MemoryHiddenBtn">Вернуться</div>
+                            </a></div>
+                    </div>
+                    <div class="MemoryHiddenCard card-panel white hide hoverable" id="SchoolAbout">
+                        <h6>Школа им. Е. Ф. Ивановского</h6>
+                        <span class="-text">
+                            День знаний с педагогами, школьниками и их родителями провели премьер-министр Роман Головченко, председатель облисполкома Николай Шерстнёв, помощник Президента – инспектор по Витебской области Анатолий Линевич, председатель Витебского городского исполнительного комитета Вадим Зарянкин, другие почетные гости.
+
+                            По информации главного управления по образованию облисполкома на строительстве современного комплекса освоено более 30 миллионов рублей. Возведены три корпуса, два бассейна, различные современные площадки. Всем необходимым оборудованы кабинеты и школьные мастерские.
+                            
+                            Комплекс рассчитан на 1020 человек, в две смены тут будут учиться 2077 школьников. Коллектив педагогов, многие из которых живут в этом же микрорайоне, на новом рабочем месте будут предварять в жизнь все свои самые амбициозные идеи. В работу включились 132 педагога.                            <div class="center">
+                                <img src="img/mogila.jpg" class="z-depth-2 hoverable top-animation post" alt=""
+                                    width="65%" height="65%"></img></div>
+                            Имя героя высечено золотыми буквами в зале Славы Центрального музея Великой Отечественной
+                            войны в Парке Победы города Москвы.
+                            <div class="center">
+                                <img src="img/muzey_velikoy_otechestvennoy_voyny_5.jpg"
+                                    class="z-depth-2 hoverable top-animation post" alt="" width="100%"
+                                    height="100%"></img></div>
                         </span>
                         <div><a href="#moscback">
                                 <div class="btn brown scale-animation MemoryHiddenBtn">Вернуться</div>
@@ -343,107 +431,117 @@
         <footer>
             <div class="footer-copyright" id="FooterChase">
                 <div class="container">
-                     <span class="brown-text lighten-4">
+                    <span class="brown-text lighten-4">
                         <script>
-                        new Date().getFullYear() > 2010 && document.write(new Date().getFullYear()); //Обновление года
-                        </script><a href="index.html "> &nbsp; <span class="brown-text lighten-4">Danchenko</span></a>   <div class="contacts"><a href="https://t.me/DanchenkoRostislav" target="_blank"><i class="fab fa-telegram-plane"></i></a><a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a></div>
+                            new Date().getFullYear() > 2010 && document.write(new Date()
+                            .getFullYear()); //Обновление года
+                        </script><a href="index.html "> &nbsp; <span class="brown-text lighten-4">Danchenko</span></a>
+                        <div class="contacts"><a href="https://t.me/DanchenkoRostislav" target="_blank"><i
+                                    class="fab fa-telegram-plane"></i></a><a href="https://vk.com/profy2107"
+                                target="_blank"><i class="fab fa-vk"></i></a></div>
                     </span>
                 </div>
             </div>
         </footer>
         <!--Футер-->
     </div>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous">
+    </script>
     <!--Иконки-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Фреймворк-->
     <script>
-    //Подключение бокового меню
-    $(document).ready(function() {
-        $('.sidenav').sidenav();
-    });
-    //
-
-    //Подключение подсказок
-    $(document).ready(function() {
-        $('.tooltipped').tooltip();
-    });
-    //
-
-    //Подключение меню проектов
-    $(document).ready(function() {
-        $('.collapsible').collapsible();
-    });
-    //
-
-    //Подключение параллакса
-    $(document).ready(function() {
-        $('.parallax').parallax();
-    });
-    //
-
-    //Кнопка Вверх
-    $(document).ready(function() {
-        $('body').append('<i class="material-icons z-depth-3" id="go-top"><span id="go-top-icon">keyboard_arrow_up</span></i>');
-    });
-    $(function() {
-        $.fn.scrollToTop = function() {
-            $(this).hide().removeAttr("href");
-            if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
-            var scrollDiv = $(this);
-            $(window).scroll(function() {
-                if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
-                else $(scrollDiv).fadeIn("slow")
-            });
-            $(this).click(function() {
-                $("html, body").animate({ scrollTop: 0 }, "slow")
-            })
-        }
-    });
-    $(function() {
-        $("#go-top").scrollToTop();
-    });
-    //
-
-    //Анимация навбара
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 30) {
-            $('nav').addClass("sticky");
-            $('.tabs').addClass("hide");
-
-
-        } else {
-            $('nav').removeClass("sticky");
-            $('.tabs').removeClass("hide");
-        }
-    });
-    //
-
-    //Блоки 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() < 30) {
-            $('.MemoryHiddenCard').addClass("hide");
-        }
-    });
-    //
-    //Блоки 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 2500) {
-            $('footer').addClass("hide");
-        } else {
-            $('footer').removeClass("hide");
-        }
-    });
-    //
-    $('.dropdown-trigger').dropdown();
-    jQuery(document).ready(function() {
-        jQuery('.post').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated fadeIn',
-            offset: 100
+        //Подключение бокового меню
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
         });
-    });
+        //
+
+        //Подключение подсказок
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+        //
+
+        //Подключение меню проектов
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+        //
+
+        //Подключение параллакса
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+        //
+
+        //Кнопка Вверх
+        $(document).ready(function () {
+            $('body').append(
+                '<i class="material-icons z-depth-3" id="go-top"><span id="go-top-icon">keyboard_arrow_up</span></i>'
+                );
+        });
+        $(function () {
+            $.fn.scrollToTop = function () {
+                $(this).hide().removeAttr("href");
+                if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+                var scrollDiv = $(this);
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+                    else $(scrollDiv).fadeIn("slow")
+                });
+                $(this).click(function () {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, "slow")
+                })
+            }
+        });
+        $(function () {
+            $("#go-top").scrollToTop();
+        });
+        //
+
+        //Анимация навбара
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 30) {
+                $('nav').addClass("sticky");
+                $('.tabs').addClass("hide");
+
+
+            } else {
+                $('nav').removeClass("sticky");
+                $('.tabs').removeClass("hide");
+            }
+        });
+        //
+
+        //Блоки 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 30) {
+                $('.MemoryHiddenCard').addClass("hide");
+            }
+        });
+        //
+        //Блоки 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 2500) {
+                $('footer').addClass("hide");
+            } else {
+                $('footer').removeClass("hide");
+            }
+        });
+        //
+        $('.dropdown-trigger').dropdown();
+        jQuery(document).ready(function () {
+            jQuery('.post').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated fadeIn',
+                offset: 100
+            });
+        });
     </script>
     <script src="js/jquery.viewportchecker.js"></script>
     <script type="text/javascript" src="js/divide.js"></script>
