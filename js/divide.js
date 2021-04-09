@@ -13,7 +13,7 @@ function MinskShow() {
     ChashnikiAbout.classList.add("hide");
     SlyckAbout.classList.add("hide");
     MoscowAbout.classList.add("hide");
-    SchoolAbout.classList.ad('hide');
+    SchoolAbout.classList.add('hide');
 
 }
 
@@ -24,7 +24,7 @@ function VitebskShow() {
     ChashnikiAbout.classList.add("hide");
     SlyckAbout.classList.add("hide");
     MoscowAbout.classList.add("hide");
-    SchoolAbout.classList.ad('hide');
+    SchoolAbout.classList.add('hide');
 
 }
 
@@ -36,7 +36,7 @@ function ChashnikiShow() {
     MinskAbout.classList.add("hide");
     MoscowAbout.classList.add("hide");
     SlyckAbout.classList.add("hide");
-    SchoolAbout.classList.ad('hide');
+    SchoolAbout.classList.add('hide');
 
 }
 
@@ -48,7 +48,7 @@ function SlyckShow() {
     MinskAbout.classList.add("hide");
     MoscowAbout.classList.add("hide");
     ChashnikiAbout.classList.add("hide");
-    SchoolAbout.classList.ad('hide');
+    SchoolAbout.classList.add('hide');
 
 }
 
@@ -60,7 +60,7 @@ function MoscowShow() {
     MinskAbout.classList.add("hide");
     ChashnikiAbout.classList.add("hide");
     SlyckAbout.classList.add("hide");
-    SchoolAbout.classList.ad('hide');
+    SchoolAbout.classList.add('hide');
 
 }
 
