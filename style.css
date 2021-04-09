@@ -294,6 +294,10 @@ nav.sticky {
 
 }
 
+.indexmaincontent img{
+    border-radius: 5px;
+}
+
 .indexmaincontent {
     position: absolute;
     top: 50%;
@@ -409,10 +413,6 @@ a {
         bottom: 15px;
         left: 45%;
     }
-nav{
-       border-radius: 0px 0px 10px 10px;
-}
-
 
 
     .collapsiblecustfull {
@@ -639,4 +639,14 @@ nav {
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
     bottom: -45px !important;
 }
+}
+
+.collapsible{
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.maps{
+    border-radius: 25px !important;
+    overflow: hidden;
 }
