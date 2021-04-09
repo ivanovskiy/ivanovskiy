@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Material Design иконки -->
 </head>
 
-<body>
+<body id="index-page">
     <!--
   ____           _   _     _             
  |  _ \ ___  ___| |_(_)___| | __ ___   __
@@ -69,7 +69,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <!-- Кнопки на пк -->
             <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html" class="disabled">Главная</a></li>
                 <li><a href="podviggen.html">Подвиг Генерала</a></li>
                 <li><a href="lifegen.html">Жизненный путь Генерала</a></li>
                 <li><a href="medalsgen.html">Награды Генерала</a></li>
@@ -97,9 +97,9 @@
                     <!-- Контент на размытом фоне -->
                     <div class="row">
                         <div class="col l6 s12">
-                            <img src="img/colorized-image.jpg" alt="" width="35%" height="35%">
+                            <img src="img/colorized-image.jpg" alt="" width="45%" >
                         </div>
-                        <div class="col l6 s12 scale-animation">
+                        <div id='index-text' class="col l6 s12">
                             <h4 class="center-align ">Евгений Филиппович Ивановский:</h4>
                             <h5 class="container center-align ">Генерал с большой буквы</h5>
                         </div>
@@ -228,10 +228,6 @@
     //
     </script>
     <script src="js/jquery.viewportchecker.js"></script> <!-- Анимация появления блоков -->
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script> <!-- VK Api -->
-    <script type="text/javascript">
-    VK.Widgets.Poll("vk_poll", {}, "331859104_c8f8555059150a82c3");
-    </script><!-- ВК опросы -->
 </body>
 
 </html>

@@ -64,7 +64,7 @@
     <!--Навбар-->
     <nav class="nav-extended nav-fixed">
         <div class="nav-wrapper">
-             <a href="index.html" class="brand-logo scale-animation">Ивановский</a>
+             <a href="index.html" class="brand-logo ">Ивановский</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Главная</a></li>
@@ -466,12 +466,10 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > 250) {
             $('nav').addClass("sticky");
-            $('.tabs').addClass("hide");
             $('.timelinemenubut').addClass("sticky");
         } else {
             $('nav').removeClass("sticky");
             $('.timelinemenubut').removeClass("sticky");
-            $('.tabs').removeClass("hide");
         }
     });
     //

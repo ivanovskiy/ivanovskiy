@@ -63,7 +63,7 @@
     <!--Навбар-->
     <nav class="nav-extended nav-fixed ">
         <div class="nav-wrapper">
-             <a href="index.html" class="brand-logo scale-animation">Ивановский</a>
+             <a href="index.html" class="brand-logo">Ивановский</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Главная</a></li>
@@ -106,7 +106,7 @@
                     </span>
                 </div>
                 <div class="center">
-                    <img src="img/ivanovskiymain.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="30%" height="30%"></img>
+                    <img src="img/ivanovskiymain.jpg" class="z-depth-2 hoverable post" alt="" width="30%" height="30%"></img>
                     <br>
                     <i class="brown-text">Е.Ф. Ивановский (07.03.1918 - 23.11.1991)</i>
                 </div>
@@ -116,7 +116,7 @@
                     </span>
                 </div>
                 <div class="center">
-                    <img src="img/45_35.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="75%" height="75%"></img>
+                    <img src="img/45_35.jpg" class="z-depth-2 hoverable post" alt="" width="75%" height="75%"></img>
                     <br>
                     <i class="brown-text">1980-ые</i>
                 </div>
@@ -130,7 +130,7 @@
                     </span>
                 </div>
                 <div class="center">
-                    <img src="img/ivanovskiy19459m.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="75%" height="75%"></img>
+                    <img src="img/ivanovskiy19459m.jpg" class="z-depth-2 hoverable post" alt="" width="75%" height="75%"></img>
                     <br>
                     <i class="brown-text">1945 год, 9 мая</i>
                 </div>
@@ -141,7 +141,7 @@
                     </span>
                 </div>
                 <div class="center">
-                    <img src="img/45_8.jpg" class="z-depth-2 hoverable top-animation post" alt="" width="85%" height="85%"></img>
+                    <img src="img/45_8.jpg" class="z-depth-2 post" alt="" width="85%" height="85%"></img>
                     <br>
                     <i class="brown-text">1944 год</i>
                 </div>
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="center">
-                       <a href="medalsgen.html"> <div class="btn brown scale-animation z-depth-2 hoverable">Посмотреть медали...</div></a>
+                       <a href="medalsgen.html"> <div class="btn brown z-depth-2">Посмотреть медали...</div></a>
                     </div>
         </div>
 
@@ -232,10 +232,8 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > 250) {
             $('nav').addClass("sticky");
-            $('.tabs').addClass("hide");
         } else {
             $('nav').removeClass("sticky");
-            $('.tabs').removeClass("hide");
         }
     });
     //

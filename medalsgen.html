@@ -64,7 +64,7 @@
     <!--Навбар-->
     <nav class="nav-extended nav-fixed">
         <div class="nav-wrapper">
-             <a href="index.html" class="brand-logo scale-animation">Ивановский</a>
+             <a href="index.html" class="brand-logo ">Ивановский</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Главная</a></li>
@@ -107,7 +107,7 @@
                         <a class="carousel-item" href="#two!"><img src="img/medals/Za-oboronu-Stalingrada-768x652.png"></a>
                     </div>
                      <div class="center">
-                       <a id="podrobnee" href="#podrobnee"> <div class="btn brown scale-animation z-depth-2 hoverable">Подробнее...</div></a>
+                       <a id="podrobnee" href="#podrobnee"> <div class="btn brown z-depth-2 ">Подробнее...</div></a>
                     </div>
                 </div>
 
@@ -182,7 +182,7 @@
           
             </div>
              <div class="center">
-                       <a href="memorygen.html"> <div class="btn brown scale-animation z-depth-2 hoverable">Память о генерале...</div></a>
+                       <a href="memorygen.html"> <div class="btn brown z-depth-2">Память о генерале...</div></a>
                     </div>
         </div>
        
@@ -190,7 +190,7 @@
     <!--Контент-->
     <!--Футер-->
     <footer>
-        <div class="footer-copyright scale-animation">
+        <div class="footer-copyright ">
             <div class="container">
               <span class="brown-text lighten-4">
                         <script>
@@ -261,10 +261,8 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > 30) {
             $('nav').addClass("sticky");
-            $('.tab').addClass("hide");
         } else {
             $('nav').removeClass("sticky");
-            $('.tab').removeClass("hide");
         }
     });
     //

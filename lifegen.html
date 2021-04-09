@@ -64,7 +64,7 @@
     <!--Навбар-->
     <nav class="nav-extended nav-fixed">
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo scale-animation">Ивановский</a>
+            <a href="index.html" class="brand-logo">Ивановский</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Главная</a></li>
@@ -125,7 +125,7 @@
                         <img class="slider__image" src="img/vitebsk.jpg" alt="" width="100%" height="100%"></img>
                     </div>
                 </div>
-                <ul class="collapsible black-text container collapsiblecustfull top-animation z-depth-2">
+                <ul class="collapsible black-text container collapsiblecustfull z-depth-2">
                     <li>
                         <div class="collapsible-header"><i class="material-icons">filter_drama</i>Влюблённый в Черею</div>
                         <div class="collapsible-body"><a href="chereya.html"><span>C Беларусью Героя Советского Союза Евгения Филипповича Ивановского связывает деревенька Черея Чашникского района Витебской области</span></a></div>
@@ -216,10 +216,8 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > 30) {
             $('nav').addClass("sticky");
-            $('.tabs').addClass("hide");
         } else {
             $('nav').removeClass("sticky");
-            $('.tabs').removeClass("hide");
         }
     });
     //

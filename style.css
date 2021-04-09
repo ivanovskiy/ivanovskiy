@@ -22,6 +22,10 @@ body {
     font-family: "Century Gothic";
 }
 
+#index-page{
+    padding-top: 0;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -52,6 +56,8 @@ img{
 
 }
 
+
+
 .pointer {
     cursor: pointer;
 }
@@ -79,11 +85,8 @@ nav {
 }
 
 nav.sticky {
-    font-size: 24px;
-    line-height: 48px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    height: 48px;
 
 }
 
@@ -97,6 +100,20 @@ nav.sticky {
     -ms-transition: 0.30s;
     -o-transition: 0.30s;
     margin-top: 50px;
+}
+
+.card-image{
+    border-radius: 25px 25px 0px 0px !important;
+}
+.card{
+    border-radius: 25px;
+}
+.card-action{
+    border-radius: 0px 0px 25px 25px !important;
+}
+
+.card-image img{
+    border-radius: 25px 25px 0px 0px !important;
 }
 
 #go-top {
@@ -151,15 +168,6 @@ nav.sticky {
         background: #333;
         color: #fff;
         transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
     }
 
     #go-top {
@@ -237,7 +245,7 @@ nav.sticky {
     }
 
     nav li a:hover {
-        font-size: 18px;
+        opacity: 0.7;
         transition: 0.30s;
         -webkit-transition: 0.30s;
         -moz-transition: 0.30s;
@@ -246,6 +254,7 @@ nav.sticky {
     }
 
     nav li a {
+        opacity: 1;
         transition: 0.30s;
         -webkit-transition: 0.30s;
         -moz-transition: 0.30s;
@@ -279,16 +288,30 @@ nav.sticky {
 
 .bluredforest {
     background-image: url(img/bggg.jpg);
-    position: relative;
     background-size: 3000px;
-    bottom: 210px;
-    height: 780px;
+    height: 100vh;
+    position: relative;
 
 }
 
 .indexmaincontent {
-    position: relative;
-    top: 270px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.indexmaincontent .row{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .indexmaincontent .row{
+        display: flex;
+        flex-direction: column;
+    } 
 }
 
 * {
@@ -344,9 +367,8 @@ footer {
     top: 23%;
 }
 
-.decorative-block {
-    position: relative;
-    bottom: 100px;
+#index-text{
+
 }
 
 .brand-logo {
@@ -365,6 +387,7 @@ footer {
 .btn {
     border-radius: 25px;
     user-select: none;
+    transition: 0.3s;
 }
 
 .maps {
@@ -397,13 +420,6 @@ nav{
         bottom: 370px;
         margin: 0 auto;
         background-color: white;
-        opacity: 0.7;
-        transition: 0.3s;
-    }
-
-    .collapsiblecustfull:hover {
-        opacity: 1;
-        transition: 0.3s;
     }
 
     .slider {
@@ -487,6 +503,14 @@ nav {
     position: relative;
     left: 5px;
 
+}
+
+.tab a{
+    color: rgb(221, 221, 221) !important;
+    opacity: 1;
+}
+.tab.disabled a{
+    opacity: 0.5;
 }
 
 .timelinemenubut {
@@ -589,4 +613,30 @@ nav {
 .medalblock{
     margin: 0 auto;
     margin-top: 50px;
+}
+
+.bx-wrapper{
+    border-radius: 25px;
+}
+.slidermobile img{
+    border-radius: 25px;
+    overflow: hidden !important;
+}
+.bx-viewport{
+    border-radius: 25px !important;
+}
+.slider{
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    bottom: 10px !important;
+}
+
+@media screen and (max-width: 768px){
+    
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    bottom: -45px !important;
+}
 }
