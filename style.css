@@ -77,18 +77,30 @@ img{
 }
 
 nav {
-    background-color: #795548;
-    opacity: 0.9;
+    background-color: rgba(121, 85, 72, 0.85);
     -webkit-transition: 0.3s;
     transition: 0.3s;
     user-select: none;
 }
+
+nav .right li a{
+    display: flex;
+    align-items: center;
+}
+nav .right li a span{
+    margin-right: 5px;
+}
+
 
 nav.sticky {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 
 }
+.brand-logo span{
+    margin-right: 5px;
+}
+
 
 .card-panel {
     color: dimgray;
@@ -389,7 +401,7 @@ footer {
 }
 
 .btn {
-    border-radius: 25px;
+    border-radius: 15px;
     user-select: none;
     transition: 0.3s;
 }
@@ -405,6 +417,10 @@ footer {
 
 a {
     color: black;
+}
+
+.collapsible{
+    user-select: none;
 }
 
 @media screen and (min-width: 768px) {
