@@ -389,6 +389,7 @@ footer {
 
 .brand-logo {
     margin-left: 15px;
+    white-space: nowrap
 }
 
 .citata {
